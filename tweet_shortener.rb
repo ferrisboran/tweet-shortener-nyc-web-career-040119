@@ -25,8 +25,7 @@ def word_substituter(string)
     if dictionary.keys.include?(word)
       tweet.push(dictionary[word])
     elsif cap_key.include?(word)
-      word.downcase
-      tweet.push(dictionary[word])
+      tweet.push(dictionary[word.capitalize])
     else
       tweet.push(word)
     end
