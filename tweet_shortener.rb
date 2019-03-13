@@ -15,7 +15,7 @@ end
 
 def word_substituter(string)
   cap_key = []
-  dictionary.each do |key|
+  dictionary.keys.each do |key|
     cap_key.push(key.to_s.capitalize)
   end
 
