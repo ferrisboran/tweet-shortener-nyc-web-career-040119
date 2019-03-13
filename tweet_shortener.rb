@@ -18,7 +18,7 @@ def word_substituter(string)
   dictionary.each do |key|
     cap_key.push(key.to_s.capitalize)
   end
-  
+
   arr = string.split(" ")
   tweet = []
   arr.each do |word|
