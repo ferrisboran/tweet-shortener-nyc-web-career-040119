@@ -13,6 +13,6 @@ end
 
 def word_substituter(string)
   arr = string.split(" ")
-  keys = dictionary.values
-  keys
+  key = dictionary.keys
+  key
 end
