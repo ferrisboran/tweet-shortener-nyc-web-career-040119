@@ -15,7 +15,7 @@ def word_substituter(string)
   arr = string.split(" ")
   arr.each do |word|
     if dictionary.keys.include?(word)
-      arr.replace(dictionary.values)
+      word.replace(dictionary.values)
     end
   end
   arr
