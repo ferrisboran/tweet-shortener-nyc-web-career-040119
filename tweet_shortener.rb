@@ -32,7 +32,6 @@ def word_substituter(string)
     end
   end
   tweet.join(" ")
-  cap_key
 end
 
 def bulk_tweet_shortener(array)
