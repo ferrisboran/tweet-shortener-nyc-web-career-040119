@@ -14,10 +14,18 @@ def dictionary
 end
 
 def word_substituter(string)
+  cap_key = []
+  dictionary.each do |key|
+    cap_key.push(key.to_s.capitalize)
+  end
+  
   arr = string.split(" ")
   tweet = []
   arr.each do |word|
     if dictionary.keys.include?(word)
+      tweet.push(dictionary[word])
+    elsif cap_key.include?(word)
+      word.downcase
       tweet.push(dictionary[word])
     else
       tweet.push(word)
