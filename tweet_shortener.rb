@@ -16,3 +16,5 @@ def word_substituter(string)
   key = dictionary.keys
   key
 end
+
+puts word_substituter("hello")
