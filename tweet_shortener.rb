@@ -23,5 +23,3 @@ def word_substituter(string)
   end
   tweet.join(" ")
 end
-
-puts word_substituter("hello")
