@@ -13,10 +13,6 @@ end
 
 def word_substituter(string)
   arr = string.split(" ")
-  arr.each do |word|
-    if dictionary.keys.include?(word)
-      word.replace(dictionary.values)
-    end
-  end
-  arr
+  keys = dictionary.keys
+  keys
 end
